@@ -1,31 +1,20 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="nav">
+      <div class="logo">
+        <h1>ChainSmoke</h1>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li><router-link tag="a" to="/">Home</router-link></li>
+          <li><router-link tag="a" to="/about">About</router-link></li>
+        </ul>
+        <ul>
+          <router-link tag="a" to="/register"><li class="regbut">Register</li></router-link>
+          <li><router-link tag="a" to="/login">LogIn</router-link></li>
+        </ul>
+      </div>
     </div>
     <router-view/>
   </div>
 </template>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>

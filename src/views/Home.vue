@@ -1,18 +1,32 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="main">
+    <div class="header">
+    <h2>CHAIN SMOKE</h2>
+      <p>for everything blockchain</p>
+    </div>
+    <div class="buttons">
+        <router-link tag="a" to="/personal">
+          <div class="butleft">
+            <h3>Personal</h3>
+          </div>
+        </router-link>
+        <router-link tag="a" to="/business">
+          <div class="butright">
+            <h3>Business</h3>
+          </div>
+        </router-link>
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Counter from '@/components/Counter.vue'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    Counter
   }
 }
 </script>
